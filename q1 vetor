@@ -1,0 +1,22 @@
+/*
+programa que lê e imprimi um vetor de 5 elementos
+*/
+
+#include <stdio.h>
+
+#define TAM 5
+
+int main(){
+
+int vx[TAM];
+
+//scanf para ler
+for(int k = 0; k<TAM; k++){
+  scanf("%d",&vx[k]);
+}
+//imprimir
+for(int k = 0; k<TAM; k++){
+  printf("%d\n",vx[k]);
+}
+    return 0;
+}
