@@ -1,0 +1,19 @@
+//Vetores
+#define TAM 3
+So pode ter dados do mesmo tipo, 
+int v[3];//v[TAM] //dentro do cochetes vc guarda a quantidade de elementos do vetor;
+v[0]=10;
+v[1]=20;
+v[2]=30;
+for(int k =0; k<3; k++){//k<TAM;
+  v[k]= (k+1)*10;
+}
+//scanf para ler
+for(int k =0; k<3; k++){
+  scanf("%d",&v[k]);
+}
+//imprimir
+for(int k =0; k<3; k++){
+  printf("%d\n",v[k]);
+}
+
