@@ -1,0 +1,39 @@
+/*
+programa que lê e imprimi um vetor de 5 elementos, media, maior e menor elemento do vetor;
+*/
+
+#include <stdio.h>
+
+#define TAM 5
+
+int main(){
+
+int vx[TAM];
+int somatorio = 0;
+float media;
+int menor = 44444444, maior =0;
+
+//scanf para ler
+    for(int k = 0; k<TAM; k++){
+        printf("Digite o valor do vetor : %d\n", k);
+        scanf("%d",&vx[k]);
+
+        if(vx[k] > maior){
+            maior = vx[k];
+        }else if(vx[k] < menor){
+            menor = vx[k];
+        }
+
+        somatorio += vx[k];
+        media = (float)somatorio/TAM;
+}
+//imprimir
+    for(int k = 0; k<TAM; k++){
+    printf("valor de vetor %d : %d\n", k, vx[k]);
+    }
+    printf("Média : %.2f\n", media);
+    printf("Menor : %d\n", menor);
+    printf("Maior : %d\n", maior);
+
+return 0;
+}
